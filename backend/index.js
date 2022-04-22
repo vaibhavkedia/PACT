@@ -1,9 +1,18 @@
 const express = require("express");
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+require("./helpers/dbconnect");
+require("dotenv").config();
 
+const PORT = process.env.PORT;
 const routes = require("./routes");
+
+app.use(
+  express.urlencoded({
+    limit: "50mb",
+    extended: true,
+  })
+);
 
 app.use("/", routes);
 
