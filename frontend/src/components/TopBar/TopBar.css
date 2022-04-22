@@ -1,13 +1,16 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid rgb(200, 200, 200);
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .profileContainer {
   display: flex;
+  margin-right: 30vw;
 }
 
 .profilePhoto {
@@ -33,6 +36,6 @@
 }
 
 .add {
-  margin-right: 100px;
+  margin-left: 30vw;
   margin-top: 20px;
 }
