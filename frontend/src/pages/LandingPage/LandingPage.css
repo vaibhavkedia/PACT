@@ -32,4 +32,15 @@
 }
 
 .landing-card .landing-card__head .landing-card__ctr .landing-card__btn {
+  border: none;
+  color: white;
+  margin-top: 50px;
+  min-width: 130px;
+  min-height: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: rgb(93, 153, 206);
+  cursor: pointer;
+  justify-content: center;
 }
