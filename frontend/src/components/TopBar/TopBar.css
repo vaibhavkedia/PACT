@@ -6,6 +6,8 @@
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+  background-color: rgb(249, 227, 210);
 }
 
 .profileContainer {
@@ -14,28 +16,36 @@
 }
 
 .profilePhoto {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-left: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .username {
   margin-left: 10px;
   margin-top: 20px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .logo {
-  color: blue;
+  color: rgb(5, 179, 202);
   font-weight: 900;
   margin-left: 200px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 2rem;
-  margin-left: -200px;
+  margin-left: -60px;
+  font-family: "Abril Fatface", cursive;
 }
 
 .add {
   margin-left: 30vw;
-  margin-top: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
 }
