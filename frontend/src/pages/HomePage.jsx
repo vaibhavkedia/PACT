@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SimpleMap from "../components/SimpleMap";
 const AnyReactComponent = ({ text }) => (
   <div
@@ -30,10 +30,30 @@ const AnyReactComponent = ({ text }) => (
   </div>
 );
 const HomePage = () => {
+  const [position, setPosition] = useState({});
+
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      alert("Geolocation is not supported by this browser.");
+    }
+  }
+
+  function showPosition(position) {
+    console.log(position.coords.latitude, position.coords.longitude);
+    setPosition({
+      lat: position.coords.latitude,
+      lng: position.coords.longitude,
+    });
+  }
+
+  getLocation();
+
   return (
-    <SimpleMap>
-      <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker 1" />
-      <AnyReactComponent lat={59.955413} lng={30.45885} text="My Marker 2" />
+    <SimpleMap center={position}>
+      <AnyReactComponent lat={25.5940947} lng={85.1375645} text="My Marker 1" />
+      <AnyReactComponent lat={25.6940947} lng={85.2375645} text="My Marker 2" />
     </SimpleMap>
   );
 };
