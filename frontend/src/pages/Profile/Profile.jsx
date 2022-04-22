@@ -20,7 +20,7 @@ const Profile = ({
             <strong>Points:{points}</strong>
           </div>
         </div>
-        <div className="profile-card-ctr">
+        <div className="profile-card__ctr">
           <button className="profile-card__btn">Logout</button>
         </div>
       </div>

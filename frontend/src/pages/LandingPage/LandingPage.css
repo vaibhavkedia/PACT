@@ -1,0 +1,46 @@
+.landing-card {
+  width: 100vw;
+  min-height: 90vh;
+  margin: auto;
+  position: relative;
+  box-shadow: 0px 8px 20px -20px grey;
+}
+
+.landing-card .landing-card__head {
+  padding: 0 80px;
+  text-align: center;
+}
+
+.landing-card .landing-card__head .landing-txt {
+  color: rgb(0, 225, 255);
+  font-size: 8rem;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: 18px;
+  font-family: "Abril Fatface", cursive;
+}
+
+.landing-card .landing-card__head .landing-desc {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.landing-card .landing-card__head .landing-card__ctr {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-card .landing-card__head .landing-card__ctr .landing-card__btn {
+  border: none;
+  color: white;
+  margin-top: 70px;
+  min-width: 130px;
+  min-height: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: rgb(93, 153, 206);
+  cursor: pointer;
+  justify-content: center;
+}
