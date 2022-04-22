@@ -14,6 +14,10 @@ app.use(
   })
 );
 
+const multer = require("multer");
+const upload = multer();
+app.use(upload.array("imageData"));
+
 app.use("/", routes);
 
 app.listen(PORT, () => {
