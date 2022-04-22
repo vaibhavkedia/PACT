@@ -1,7 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
 
 const CreateEventPage = () => {
-  return <div>CreateEventPage</div>;
+  const [title,setTitle] = useState("");
+  const [desc,setDesc] = useState("");
+  const [image,setImage] = useState("");
+  const [contactEmail,setContactEmail] = useState("");  
+  const [contactPhone, setContactPhone] = useState("");
+  const [pinCode, setPinCode] = useState("");
+  const []
+  return(
+      <form className="formContainer">
+         
+      </form>
+  )
 };
 
 export default CreateEventPage;
