@@ -1,8 +1,8 @@
 const router = require("express").Router();
-// const auth = require("./auth");
+const event = require("./event");
 const user = require("./user");
 
-// router.use("/auth", auth);
+router.use("/event", event);
 router.use("/user", user);
 
 module.exports = router;
