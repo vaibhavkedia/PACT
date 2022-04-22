@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TopBar from "../../components/TopBar/TopBar";
 import "./CreateEventPage.css";
 
 const CreateEventPage = () => {
@@ -18,6 +19,7 @@ const CreateEventPage = () => {
 
   return (
     <div>
+      <TopBar />
       <div className="formContainer">
         <input
           type="text"
