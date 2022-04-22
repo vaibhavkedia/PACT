@@ -11,7 +11,6 @@ const TopBar = ({
   return (
     <Box className="container">
       <Box className="profileContainer" onClick={() => navigate("/user/id")}>
-        {/*Profile photo and name*/}
         <img src={imageLink} alt="no image" className="profilePhoto" />
         <Box className="username">Magnus Carlsen</Box>
       </Box>
