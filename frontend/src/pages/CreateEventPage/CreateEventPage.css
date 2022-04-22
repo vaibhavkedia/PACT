@@ -1,0 +1,12 @@
+form {
+  display: flex !important;
+}
+
+.formContainer {
+  flex-direction: row;
+}
+
+.formElement {
+  width: 100%;
+  margin-top: 40px;
+}

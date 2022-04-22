@@ -1,0 +1,41 @@
+.singleEventContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.element {
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.title {
+  text-align: center;
+  margin: auto;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.image {
+  height: 300px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.funds {
+  display: flex;
+  justify-content: space-around;
+}
+
+.currentFund {
+}
+
+.targetFund {
+}
+
+.contactDetails {
+  display: flex;
+  justify-content: space-around;
+}
