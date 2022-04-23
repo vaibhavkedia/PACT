@@ -1,34 +1,33 @@
-import axios from axios;
+import axios from "axios";
 
-const url = "";
+const url = "http://localhost:5000";
 
 export const fetchEventById = async (id) => {
-    try {
-      const data = await axios.get(`${url}/event/${id}`);
-      console.log(data);
+  try {
+    const data = await axios.get(`${url}/event/${id}`);
+    console.log(data);
 
-      return data; 
-  } catch(err) {
-        console.error(err);
-    }
-}
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+};
 
 export const fetchEventByPincode = async (pincode) => {
-    try {
-        const data = await axios.get(`${url}/event/pincode/${pincode}`);
-        console.log(data);
-    
-        return data;
-    } catch(err) {
-        console.error(err);
-    }  
-}
+  try {
+    const data = await axios.get(`${url}/event/pincode/${pincode}`);
+    console.log(data);
+
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+};
 
 export const createEvent = async (eventData) => {
-    try { 
-        axios.post(`${url}/create`);
-    } catch(err) {
-        console.error(err);
-    }   
-}
-
+  try {
+    axios.post(`${url}/create`, eventData);
+  } catch (err) {
+    console.error(err);
+  }
+};
