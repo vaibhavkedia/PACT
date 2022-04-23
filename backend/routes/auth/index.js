@@ -14,6 +14,7 @@ router.get(
     //save in data base if new user
     //ckeck if user already exixts
     const profile = req.user._json;
+    let email;
     const dbUser = await Schemas.User.findOne({ email: profile.email });
     if (!dbUser) {
       const newUser = new Schemas.User({
@@ -23,8 +24,12 @@ router.get(
         points: "0",
       });
       await newUser.save();
+      email = profile.email;
+    } else {
+      email = dbUser.email;
     }
-    res.redirect("http://localhost:3000/home");
+
+    res.redirect(`http://localhost:3000/home?email=${email}`);
   }
 );
 
