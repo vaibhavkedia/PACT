@@ -25,19 +25,19 @@ const SingleEventPage = () => {
           vero voluptas. Cumque, dignissimos veniam. Illum cum, deserunt
           voluptatum recusandae excepturi nihil?
         </div>
-        <div class="progress">
-          <div class="progress--endgoal">100,000INR</div>
-          <div class="progress--bar">
-            <div class="complete"></div>
+        <div className="progress">
+          <div className="progress--endgoal">100,000INR</div>
+          <div className="progress--bar">
+            <div className="complete"></div>
           </div>
           <div className="progress--txt">
-            <div class="progress--goal">
-              <span class="progress-number">58%</span>
-              <span class="progress-label">Funded</span>
+            <div className="progress--goal">
+              <span className="progress-number">58%</span>
+              <span className="progress-label">Funded</span>
             </div>
-            <div class="progress--goal">
-              <span class="progress-number">58,420INR</span>
-              <span class="progress-label">Raised</span>
+            <div className="progress--goal">
+              <span className="progress-number">58,420INR</span>
+              <span className="progress-label">Raised</span>
             </div>
           </div>
         </div>
