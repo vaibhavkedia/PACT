@@ -4,6 +4,7 @@ form {
 
 .formContainer {
   flex-direction: row;
+  align-items: center;
 }
 
 .formElement {

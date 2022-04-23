@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 import "./LandingPage.css";
 
 const LandingPage = () => {
@@ -19,7 +20,14 @@ const LandingPage = () => {
           </div>
 
           <div className="landing-card__ctr">
-            <button className="landing-card__btn">Login</button>
+            <button
+              className="landing-card__btn"
+              onClick={() =>
+                (window.location.href = "http://localhost:5000/auth/google")
+              }
+            >
+              Login
+            </button>
           </div>
 
           <section className="card-area">
