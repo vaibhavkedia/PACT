@@ -7,7 +7,9 @@
   padding-left: 10px;
   padding-right: 10px;
   border-bottom: 1px solid rgb(187, 187, 187);
-  background-color: rgb(249, 227, 210);
+  background-color: white;
+  /* color: white; */
+  font-size: 1vw;
 }
 
 .profileContainer {
