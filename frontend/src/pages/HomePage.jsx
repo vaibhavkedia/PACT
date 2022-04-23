@@ -2,10 +2,11 @@ import { Hidden } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import SimpleMap from "../components/SimpleMap";
 import TopBar from "../components/TopBar/TopBar";
-import { getUserByEmail } from "../api/userData";
+import { useNavigate } from "react-router-dom";
 
-const AnyReactComponent = ({ text }) => (
+const AnyReactComponent = ({ text, onClick }) => (
   <div
+    onClick={onClick}
     style={{
       display: "flex",
       flexDirection: "column",
@@ -56,35 +57,32 @@ const HomePage = () => {
   }
 
   getLocation();
-
-  const email = window.location.pathname.split("/").pop();
-
-  useEffect(() => {
-    const data = getUserByEmail(email);
-    console.log(data);
-  }, []);
-
+  const navigate = useNavigate();
   return (
     <>
       <TopBar />
       <div style={{ height: "90vh", overflow: "hidden" }}>
         <SimpleMap center={position}>
           <AnyReactComponent
+            onClick={() => navigate("/event/12345")}
             lat={22.775997}
             lng={86.14663}
             text="My Marker 1"
           />
           <AnyReactComponent
+            onClick={() => navigate("/event/12345")}
             lat={22.975997}
             lng={86.14663}
             text="My Marker 2"
           />
           <AnyReactComponent
+            onClick={() => navigate("/event/12345")}
             lat={22.775997}
             lng={86.54663}
             text="My Marker 1"
           />
           <AnyReactComponent
+            onClick={() => navigate("/event/12345")}
             lat={22.175997}
             lng={86.94663}
             text="My Marker 2"
