@@ -1,4 +1,5 @@
 import React from "react";
+import TopBar from "../../components/TopBar/TopBar";
 import "./Profile.css";
 
 const Profile = ({
@@ -9,6 +10,7 @@ const Profile = ({
 }) => {
   return (
     <>
+      <TopBar />
       <div className="profile-card">
         <div className="profile-card__img">
           <img className="profile__img" src={imageLink} alt="profile card" />
