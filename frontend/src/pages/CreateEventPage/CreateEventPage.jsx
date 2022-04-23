@@ -20,7 +20,7 @@ const CreateEventPage = () => {
   return (
     <div>
       <TopBar />
-      <div className="formContainer">
+      <div className="form-container">
         <input
           type="text"
           placeholder="Enter title"
@@ -35,6 +35,7 @@ const CreateEventPage = () => {
         />
         <input
           type="file"
+          placeholder="Image related to event"
           onChange={(e) => setImage(e.target.value)}
           className="formElement"
         />
@@ -74,7 +75,7 @@ const CreateEventPage = () => {
           onChange={(e) => setDocument(e.target.value)}
           className="formElement"
         />
-        <button type="submit" onClick={handleSubmit} className="formElement">
+        <button type="submit" onClick={handleSubmit} className="form-btn">
           Submit
         </button>
       </div>
