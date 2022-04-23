@@ -15,6 +15,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const passport = require("passport");
+const cors = require("cors");
+
+app.use(cors());
 
 const multer = require("multer");
 const upload = multer();
