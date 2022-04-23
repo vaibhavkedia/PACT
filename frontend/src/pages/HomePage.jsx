@@ -1,7 +1,9 @@
 import { Hidden } from "@mui/material";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SimpleMap from "../components/SimpleMap";
 import TopBar from "../components/TopBar/TopBar";
+import { getUserByEmail } from "../api/userData";
+
 const AnyReactComponent = ({ text }) => (
   <div
     style={{
@@ -31,6 +33,7 @@ const AnyReactComponent = ({ text }) => (
     </div>
   </div>
 );
+
 const HomePage = () => {
   const [position, setPosition] = useState({});
 
@@ -53,6 +56,13 @@ const HomePage = () => {
   }
 
   getLocation();
+
+  const email = window.location.pathname.split("/").pop();
+
+  useEffect(() => {
+    const data = getUserByEmail(email);
+    console.log(data);
+  }, []);
 
   return (
     <>
