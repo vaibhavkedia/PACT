@@ -31,3 +31,11 @@ export const createEvent = async (eventData) => {
     console.error(err);
   }
 };
+
+export const deleteEvent = async (id) => {
+  try {
+    axios.delete(`${url}/delete/${id}`);
+  } catch (err) {
+    console.error(err);
+  }
+};
