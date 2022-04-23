@@ -26,7 +26,7 @@ export const fetchEventByPincode = async (pincode) => {
 
 export const createEvent = async (eventData) => {
   try {
-    axios.post(`${url}/create`, eventData);
+    await axios.post(`${url}/create`, eventData);
   } catch (err) {
     console.error(err);
   }
@@ -34,8 +34,8 @@ export const createEvent = async (eventData) => {
 
 export const deleteEvent = async (id) => {
   try {
-    axios.delete(`${url}/delete/${id}`);
+    await axios.delete(`${url}/delete/${id}`);
   } catch (err) {
-    console.error(err);
+    console.log(err);
   }
 };
