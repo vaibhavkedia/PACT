@@ -5,15 +5,15 @@ import "./SingleEventPage.css";
 //
 import { fetchEventById } from "../../api/eventData";
 
-const SingleEventPage = () => {
+const SingleEventPage = async () => {
   try {
-    const data = fetchEventById("6262f1519606c760384f9e6b");
+    const { data } = await fetchEventById("6262f1519606c760384f9e6b");
     console.log(data);
     return (
       <>
         <TopBar />
         <div className="singleEventContainer">
-          <div className="title element">Magnus Carlsen</div>
+          <div className="title element">{data.title}</div>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FIDE_World_FR_Chess_Championship_2019_-_Magnus_Carlsen_%28cropped%29.jpg/640px-FIDE_World_FR_Chess_Championship_2019_-_Magnus_Carlsen_%28cropped%29.jpg"
             className="image"
