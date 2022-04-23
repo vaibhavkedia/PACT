@@ -60,13 +60,23 @@ const HomePage = () => {
       <div style={{ height: "90vh", overflow: "hidden" }}>
         <SimpleMap center={position}>
           <AnyReactComponent
-            lat={25.5940947}
-            lng={85.1375645}
+            lat={22.775997}
+            lng={86.14663}
             text="My Marker 1"
           />
           <AnyReactComponent
-            lat={25.6940947}
-            lng={85.2375645}
+            lat={22.975997}
+            lng={86.14663}
+            text="My Marker 2"
+          />
+          <AnyReactComponent
+            lat={22.775997}
+            lng={86.54663}
+            text="My Marker 1"
+          />
+          <AnyReactComponent
+            lat={22.175997}
+            lng={86.94663}
             text="My Marker 2"
           />
         </SimpleMap>
